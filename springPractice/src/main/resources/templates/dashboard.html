@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="fade-in">✨ Welcome to the Dashboard! ✨</h1>
+        <p class="slide-in">You are successfully logged in.</p>
+        
+        <div class="button-group">
+            <a class="button" th:href="@{/index}">Go to Home</a>
+            <a class="button logout" th:href="@{/logout}">Logout</a>
+        </div>
+    </div>
+</body>
+</html>
+
+

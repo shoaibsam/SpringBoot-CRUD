@@ -1,0 +1,128 @@
+/* Apply Google Font for Aesthetic Look */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Apply a background gradient with animation */
+body {
+    height: 100vh;
+    background: linear-gradient(120deg, #84fab0, #8fd3f4);
+    animation: gradientAnimation 10s ease infinite;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Keyframe animation for the gradient background */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Container for centering content */
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 500px;
+    animation: scaleIn 1s ease-in-out;
+}
+
+/* Animation for scaling the container */
+@keyframes scaleIn {
+    0% {
+        transform: scale(0.7);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Animation for fading in the title */
+.fade-in {
+    animation: fadeIn 2s ease;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Slide-in animation for the paragraph */
+.slide-in {
+    margin-top: 10px;
+    animation: slideIn 1.5s ease;
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Styling buttons with hover effects */
+.button-group {
+    margin-top: 20px;
+}
+
+.button {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: white;
+    background-color: #56ccf2;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect with scaling */
+.button:hover {
+    background-color: #2d9cdb;
+    transform: scale(1.1);
+}
+
+/* Styling the logout button differently */
+.logout {
+    background-color: #eb5757;
+}
+
+.logout:hover {
+    background-color: #d9534f;
+}
+
+
